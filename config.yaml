@@ -1,0 +1,6 @@
+path: /home/whoami/Documents/YOLO_pothole/data
+train: images/train
+val: valid/images
+
+names:
+  0: potholes
