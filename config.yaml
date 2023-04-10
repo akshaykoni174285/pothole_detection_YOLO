@@ -1,6 +1,7 @@
 path: /home/whoami/Documents/YOLO_pothole/data
 train: images/train
-val: valid/images
+val: 
+# no validation folder selected 
 
 names:
   0: potholes
