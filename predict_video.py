@@ -6,11 +6,11 @@ import cv2
 VIDEOS_DIR = os.path.join('.', 'videos')
 # make a videos directory in the project 
 
-video_path = os.path.join(VIDEOS_DIR, 'vid3.mp4') 
+video_path = os.path.join(VIDEOS_DIR, 'vid6.mp4') 
 # to be filled the path of video in quotes like 'video1.mp3'
 video_path_out = '{}_out.mp4'.format(video_path)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(video_path)
 ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
@@ -39,6 +39,7 @@ while ret:
 
     out.write(frame)
     ret, frame = cap.read()
+    
 
 cap.release()
 out.release()
