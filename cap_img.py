@@ -24,8 +24,8 @@ while True:
   
     # Put current DateTime on each frame
     font = cv2.FONT_HERSHEY_PLAIN
-    cv2.putText(img, str(datetime.now()), (20, 40),
-                font, 2, (255, 255, 255), 2, cv2.LINE_AA)
+    # cv2.putText(img, str(datetime.now()), (20, 40),
+    #             font, 2, (255, 255, 255), 2, cv2.LINE_AA)
   
     # Display the image
     cv2.imshow('live video', img)
